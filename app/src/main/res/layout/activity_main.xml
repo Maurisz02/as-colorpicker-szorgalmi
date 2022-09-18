@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:valueFrom="0"
+        android:stepSize="1"
+        android:valueTo="255"
+        android:id="@+id/redColorSlider"/>
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redColorSlider"
+        android:valueFrom="0"
+        android:stepSize="1"
+        android:valueTo="255"
+        android:id="@+id/greenColorSlider"/>
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenColorSlider"
+        android:valueFrom="0"
+        android:stepSize="1"
+        android:valueTo="255"
+        android:id="@+id/blueColorSlider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:layout_below="@id/blueColorSlider"
+        android:text="Red:"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:id="@+id/redText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redText"
+        android:layout_marginTop="20sp"
+        android:text="Green:"
+        android:textColor="#5DFF00"
+        android:textSize="30sp"
+        android:id="@+id/greenText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenText"
+        android:layout_marginTop="20sp"
+        android:text="Blue:"
+        android:textColor="#0023FF"
+        android:textSize="30sp"
+        android:id="@+id/blueText"/>
+
+    <TextView
+        android:id="@+id/colorBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60sp"
+        android:width="350sp"
+        android:height="200sp"
+        android:text="(0, 0, 0)"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+</RelativeLayout>
